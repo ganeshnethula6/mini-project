@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <script src="./assets/js/app2.js"></script>
+</head>
+
+<body>
+    <div id="navbar" class="nav-bar">
+        <div class="navbar-brand">
+            <a href="#" class="navbar-logo">
+                <img src="./assets/images/timerimg.png" style="width:40px;" alt="navbarimg" class="navbar-img">
+
+            </a><span>Stopwatch</span>
+        </div>
+        <ul class="nav">
+            <li class="nav-list"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="#" class="nav-link">Timer</a></li>
+            <li class="nav-list"><a href="#" class="nav-link">Clock</a></li>
+            <li class="nav-list"><a href="#" class="nav-link">Calender</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="instr">
+            <a href="#instruct">click here for Instructions.</a>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="timer-container">
+                    <h1 class="timer-text" id="days">00</h1>
+                    <p class="timer-desc">Days</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="timer-container">
+                    <h1 class="timer-text" id="hours">00</h1>
+                    <p class="timer-desc">Hours</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="timer-container">
+                    <h1 class="timer-text" id="mins">00</h1>
+                    <p class="timer-desc">Minutes</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="timer-container">
+                    <h1 class="timer-text" id="secs">00</h1>
+                    <p class="timer-desc">Seconds</p>
+                </div>
+            </div>
+            <div class="col">
+                <input type="text" onmouseleave="setDefaultValue(id)" onclick="if(value=='0'){value=''}" value="0"
+                    class="input" id="dayInput">
+
+            </div>
+            <div class="col">
+                <input type="text" onmouseleave="setDefaultValue(id)" onclick="if(value=='0'){value=''}" value="0"
+                    class="input" id="hrInput">
+            </div>
+            <div class="col">
+                <input type="text" onmouseleave="setDefaultValue(id)" onclick="if(value=='0'){value=''}" value="0"
+                    class="input" id="minInput">
+            </div>
+            <div class="col">
+                <input type="text" onmouseleave="setDefaultValue(id)" onclick="if(value=='0'){value=''}" value="0"
+                    class="input" id="secInput">
+            </div>
+        </div>
+        <div id="text-msg" class="texMSg">
+
+        </div>
+        <div class="btn-cls">
+            <button class="btn btn-setTimer" onclick="setTimer()">Set Timer</button>
+            <button class="btn btn-start" onclick="start()">Start/Resume</button>
+            <button class="btn btn-resume" onclick="pause()">Pause</button>
+            <button class="btn btn-reset" onclick="reset()">Reset</button>
+        </div>
+
+    </div>
+    <div class="instruct-set">
+        <h3 id="instruct">Instructions</h3>
+        <ol>
+            <li>Enter the values in the inputs.</li>
+            <li>Press the SetTimer Button to set the timer.</li>
+            <li>Press the Start/Resume Button to start the timer.</li>
+            <li>Pause the Timer if you want to pause.</li>
+            <li>Press Start/Resume Button to resume the timer.</li>
+            <li>Press the Reset Button to reset the values.</li>
+        </ol>
+    </div>
+
+    <span class="topArrow">
+        <a href="#navbar"><img src="./assets/images/icons8-chevron-up-100.png" style="height: 50px;width:50px"
+                alt="arrowTop" /></a>
+    </span>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./assets/css/style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/app3.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cal-container">
+            <div class="cal-header">
+                <h1 id="year-title"></h1>
+            </div>
+            <div class="cal-body">
+                <table id="calender">
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thur</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="cal-footer">
+                <div class="cal-ftr-btns">
+                    <button id="prev" class="ftr-btn">Previous</button>
+                    <button id="nxt" class="ftr-btn">Next</button>
+                </div>
+                <div class="cal-ftr-selects">
+                    <label class="cal-selectLabel">Jump To:</label>
+                    <select name="month" id="monthDrpDwn" class="cal-selectDrop">
+                    </select>
+                    <select name="year" id="yearDrpDwn" class="cal-selectDrop">
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

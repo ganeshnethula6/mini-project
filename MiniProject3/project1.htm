@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src=" https://unpkg.com/chart.js-plugin-labels-dv@3.1.0/dist/chartjs-plugin-labels.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <script src="./assets/js/app1.js"></script>
+</head>
+
+<body>
+    <div class="cont">
+        <ul class="nav">
+            <li id="homeLoanTab" class="nav-list home-loan active"><a href="#" class="nav-link">Home Loan</a></li>
+            <li id="personalLoanTab" class="nav-list personal-loan"><a href="#" class="nav-link">Personal Loan</a></li>
+            <li id="carLoanTab" class="nav-list car-loan"><a href="#" class="nav-link">Car Loan</a></li>
+        </ul>
+        <div class="loan-container">
+            <div class="clear">
+                <div class="clear-line"></div>
+            </div>
+            <div class="loan-input-cont">
+                <div class="loan-amt">
+                    <div class="inputs-bx">
+                        <label id="LoanAmtLabel" class="ipt-label">Home Loan Amount</label>
+                        <div class="inpt-grp">
+                            <input id="loanAmountInput" data-range="#loanAmountSlider" type="text" class="inpt">
+                            <input type="button" value="&#8377" class="btn">
+                        </div>
+                    </div>
+                    <div class="inpt-range">
+                        <input type="range" data-input="#loanAmountInput" id="loanAmountSlider" class="range" />
+                        <datalist id="loanAmtList">
+                        </datalist>
+                    </div>
+
+                </div>
+                <div class="intrst-rate">
+                    <div class="inputs-bx">
+                        <label for="#" class="ipt-label">Interest Rate</label>
+                        <div class="inpt-grp">
+                            <input id="loanInterestInput" data-range="#loanIntrestSlider" type="text" class="inpt">
+                            <input type="button" value="%" class="btn">
+                        </div>
+                    </div>
+                    <div class="inpt-range">
+                        <input type="range" data-input="#loanInterestInput" name="loan amount" id="loanIntrestSlider"
+                            class="range" />
+                        <datalist id="intrstList">
+                        </datalist>
+                    </div>
+
+                </div>
+
+                <div class="loan-tenure">
+                    <div class="inputs-bx">
+                        <label for="#" class="ipt-label">Loan Tenure</label>
+                        <div class="inpt-grp">
+                            <input id="loanYearTenureInput" data-range="#loanTenureSlider" type="text" class="inpt">
+                            <input type="button" id="loanYr" value="Yr" class="btn btn-toggle btn-active">
+                            <input type="button" id="loanMtn" value="Mo" class="btn btn-toggle">
+                        </div>
+                    </div>
+                    <div class="inpt-range">
+                        <input type="range" data-input="#loanYearTenureInput" list="loanTenrList" name="loan amount"
+                            id="loanTenureSlider" class="range" />
+                        <datalist id="loanTenrList">
+                        </datalist>
+                    </div>
+                </div>
+
+            </div>
+            <div class="loan-anly-cont">
+                <div class="loan-vals-cont">
+                    <div class="loan-emi">
+                        <p>Loan EMI</p>
+                        <h2 id="emiValue">&#8377 40,280</h2>
+
+                    </div>
+                    <div class="loan-intrst">
+                        <p>Tortal Interest Payable</p>
+                        <h3 id="totalIntrestValue">&#8377 40,280</h3>
+
+                    </div>
+                    <div class="loan-total-amount">
+                        <p>Total Payment</p>
+                        <span>
+                            (Principle + Interest)
+                        </span>
+
+                        <h3 id="totalAmountValue">&#8377 40,280</h3>
+
+                    </div>
+                </div>
+                <div class="loan-chart-cont">
+                    <div class="pie-chart">
+                        <canvas id="loanChart" class="chart"></canvas>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

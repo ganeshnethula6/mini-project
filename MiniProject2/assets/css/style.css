@@ -1,0 +1,17 @@
+
+.container-fluid .navbar .navbar-nav .nav-item{
+    font-size: larger;
+}
+#iFrame{
+    margin: 0;
+    padding: 0;
+    width:inherit;
+    height:550px;
+    display: none;
+}
+.carousel-inner img{
+    height: 500px;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

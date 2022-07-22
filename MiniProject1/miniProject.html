@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MiniProject</title>
+
+    <script src="./assets/js/miniProject.js"></script>
+    <link id="pageStyle" rel="stylesheet" href="./assets/css/miniProjectlight.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <fieldset>
+            <form action="signIn">
+                <h2 id="title">Sign in</h2>
+                <p id="subtitle">Sign in and start managing your candidates! </p>
+                <span class="inPut"><input type="text" name="userName" id="userName" placeholder="login"></span>
+                <span class="inPut"><input type="password" name="password" id="password" placeholder="password"></span>
+                <div class="form_forgotPswd">
+                    <span>
+                        <label for="forgotPsw" class="container">
+                            <input type="checkbox" name="forgotPsw" id="forgotPsw">
+                            Remember me
+                        </label>
+                    </span>
+                    <span>
+                        <a href="#">Forgot password? </a>
+                    </span>
+
+                </div>
+                <span class="inPut"><button type="submit" id="login">Login</button></span>
+            </form>
+        </fieldset>
+
+        <div class="custom-shape-divider-bottom-green">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+            
+        </div>
+        <div class="custom-shape-divider-bottom-black">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <span id="darkIcon" onclick="changeTheme()"> <img src="./assets/images/darkmode.png" alt="darkmode"></span>
+    </div>
+
+</body>
+
+</html>
